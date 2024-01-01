@@ -74,7 +74,7 @@ body {
 @media screen and (min-width: 700px) {
   .product__card-info {
     width: 50%;
-    padding: 3.2rem;
+    padding: 2.6rem 3.3rem 3.2rem 3.3rem;
   }
 }
 .product__card-ctg {
@@ -91,7 +91,7 @@ body {
   color: hsl(212, 21%, 14%);
 }
 .product__card-text {
-  margin-block-end: 2rem;
+  margin-block-end: 1.9rem;
 }
 .product__card-price {
   display: flex;
