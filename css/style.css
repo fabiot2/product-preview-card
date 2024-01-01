@@ -20,10 +20,123 @@ body {
   display: grid;
   place-content: center;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   body {
     font-size: 1.4rem;
   }
+}
+
+.product__card {
+  width: 34.3rem;
+  height: 61.2rem;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 0.9rem;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 700px) {
+  .product__card {
+    flex-direction: row;
+    width: 60rem;
+    height: 45rem;
+  }
+}
+.product__card-img {
+  width: 100%;
+  max-height: 24rem;
+}
+.product__card-img source, .product__card-img img {
+  width: 100%;
+  max-height: 24rem;
+  border-start-start-radius: 0.9rem;
+  border-start-end-radius: 0.9rem;
+}
+@media screen and (min-width: 700px) {
+  .product__card-img {
+    width: 50%;
+    min-height: 45rem;
+  }
+  .product__card-img source, .product__card-img img {
+    width: 100%;
+    min-height: 45rem;
+    object-fit: cover;
+    border-start-start-radius: 0.9rem;
+    border-start-end-radius: 0;
+    border-end-start-radius: 0.9rem;
+  }
+}
+.product__card-info {
+  padding: 2rem 2rem 2.4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media screen and (min-width: 700px) {
+  .product__card-info {
+    width: 50%;
+    padding: 3.2rem;
+  }
+}
+.product__card-ctg {
+  font-size: 1.2rem;
+  letter-spacing: 5.016px;
+  text-transform: uppercase;
+}
+.product__card-title {
+  margin-block: 1rem 1.4rem;
+  font-size: 3.2rem;
+  line-height: 3.2rem;
+  letter-spacing: 0.288px;
+  font-family: "Fraunces", serif;
+  color: hsl(212, 21%, 14%);
+}
+.product__card-text {
+  margin-block-end: 2rem;
+}
+.product__card-price {
+  display: flex;
+  align-items: center;
+  column-gap: 1.7rem;
+}
+.product__card-price-actual {
+  font-size: 3.2rem;
+  line-height: 3.2rem;
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  color: hsl(158, 36%, 37%);
+}
+.product__card-price-sale {
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  text-decoration: line-through;
+}
+.product__card-cta {
+  width: 100%;
+  height: 4.8rem;
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  font-weight: 800;
+  font-family: "Montserrat", sans-serif;
+  border: none;
+  border-radius: 0.8rem;
+  margin-block-start: 2.6rem;
+}
+.product__card-cta-icon {
+  display: inline-block;
+  width: 1.7rem;
+  height: 1.7rem;
+  margin-block-end: -0.3rem;
+  margin-inline-end: 0.7rem;
+  background: url("../images/icon-cart.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.product__card-cta:hover {
+  background-color: #1A4031;
+  cursor: pointer;
 }
 
 footer {
