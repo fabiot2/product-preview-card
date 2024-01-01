@@ -1,0 +1,79 @@
+//  Variables
+//  Colors
+$Dark-cyan: hsl(158, 36%, 37%);
+$Cream: #F3EAE3;
+
+$Very-dark-blue: hsl(212, 21%, 14%);
+$Dark-grayish-blue: hsl(228, 12%, 48%);
+$White: hsl(0, 0%, 100%);
+
+//  Font-Head
+$Head-font-family: 'Fraunces', serif;
+$Head-font-weight: 700;
+//  Font-Body
+$Body-font-family: 'Montserrat', sans-serif;
+
+$Body-font-size: 1.4rem;
+$Body-font-lineheight:2.4rem;
+
+//  Query
+$Query-mobile: 375px;
+$Query-tablet:600px;
+$Query-desktop: 1440px;
+
+//  Reset
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-size: $Body-font-size;
+    line-height: 2.3rem;
+    font-family: $Body-font-family;
+    font-weight: 500;
+    color: $Dark-grayish-blue;
+    background-color: $Cream ;
+    display: grid;
+    place-content: center;
+
+    @media screen and (min-width: $Query-tablet) {
+        font-size:$Body-font-size;
+    
+    }
+
+}
+
+
+
+
+footer {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    background-color: #000;
+
+
+    span {
+        color: $White;
+        font-weight:400;
+        font-size: 1.2rem;
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+    
+        &:visited, &::after {
+            color: #fff;
+        }
+    }
+}
